@@ -161,10 +161,12 @@
     }
     .casestudy__card__title{
         font-size: 30px;
-        margin: 20px 0px 10px 0;
+        margin:15px 0px 5px 0;
     }
     .casestudy__card__tagline{
         font-size: 14px;
+        margin-bottom: 6px;
+        line-height: 19px;
     }
     .casestudy__card__technology__icons img{
         max-height:14px;
