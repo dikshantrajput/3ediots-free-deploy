@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Passion+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Rubik','Roboto','Passion One','Josefin Sans',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.hide{
+    display: none;
+}
+
+:root{
+    --black : #333333;
+    --lightBlack : #555555;
+    --blue: #43adc4;
+    --darkBlue:#005e72;
+    --darkGreen:#026d4f;
+    --white:#ffffff;
+    --bgGray:#f5f5f5;
+    --regular:400;
+    --medium:500;
+    --bold:700;
+    --headerHeight:100px;
+    --textLinearGradiant:linear-gradient(to bottom right , #7D60EB , #E08AFF);
+    --greenLinearGradiant:linear-gradient(to bottom right, #2BF4A8 , #23BC82);
+    --purpleLinearGradiant:linear-gradient(to bottom right, #F5A2BC , #B370D9);
+    --blueLinearGradiant:linear-gradient(to bottom right, #7AC5E4 , #0A6DFC);
+    --orangeLinearGradiant:linear-gradient(to bottom right, #F5C25E , #D8A33A);
+    --redLinearGradiant:linear-gradient(to bottom right, #F76464 , #BC1A39);
+    --pinkOrangeLinearGradiant:linear-gradient(to bottom right, #F934A7 , #F6C155);
+    --lightGreenLinearGradiant:linear-gradient(to bottom right, #C4D33B , #31A315);
+    --pinkLinearGradiant:linear-gradient(to bottom right, #F24B94 , #D30636);
+    --blueGreenLinearGradiant:linear-gradient(to bottom right, #76CCD1 , #498F33);
+    
+    --b1LinearGradiant:linear-gradient(119deg, #6fe2fb 0%, #025e72 100%);
+    --b2LinearGradiant:linear-gradient(111deg, #64dfd9, #028e63 98%);
+
+    --b1IconsLinearGradiant:linear-gradient(to top, #00738de3, #004c5be3);
+    --b2IconsLinearGradiant:linear-gradient(to top, #03946b , #014130);
+    
+    --newBlueLinearGradiant:linear-gradient(105deg, #6fe2fb 0%, #025e72 100%);
+
+    --p1Color : #2b478b;
+    --p2Color : #0f8849;
+    --p3Color : #d49d00;
+    --p4Color : #b26401;
+
+    --p1BgColor : #dfebf9;
+    --p2BgColor : linear-gradient(103deg, #cbfdbb, #61f3d0 92%);
+    --p3BgColor : #f5f5f5;
+    --p4BgColor : #feefdc;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav,button{
+    font-family: 'Josefin Sans';
+    font-weight: var(--regular);
+}
+
+.main__heading{
+    font-size:44px;
+    font-family:'Passion One';
+    text-align:center;
+    color:var(--black);
+}
+
+.main__secondary__heading{
+    font-size:24px;
+    margin-bottom: 16px;
+    font-family: 'Josefin Sans';
+    color:var(--black);
+    font-weight: var(--bold);
+}
+
+.secondary__heading{
+    font-size: 20px;
+    line-height: 26px;;
+    color:var(--lightBlack);
+}
+
+.carousel .slide{
+    background:transparent;
+}
+
+.carousel .control-dots .dot{
+    background: var(--blue);
+    margin-top: 20px;
+    outline: none;
+}
+
+@media only screen and (max-width:500px){
+    .main__heading{
+        font-size:25px;
+        color:var(--black);
+    }
+    .main__secondary__heading{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .secondary__heading{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+body::-webkit-scrollbar{
+    background:var(--bgGray);
+    width:10px;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #919090;
+    border-radius: 8px;
+}

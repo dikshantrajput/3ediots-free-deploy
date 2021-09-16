@@ -1,0 +1,267 @@
+.services__container{
+    padding:4em;
+    font-family: 'Rubik';
+}
+
+.services__heading{
+    margin-left:35px;
+}
+
+.main__heading{
+    font-size:48px;
+    color:var(--black);
+    font-weight: var(--bold);
+    margin-bottom:10px;
+}
+
+.secondary__heading{
+    color:var(--lightBlack);
+    font-size: 22px;
+}
+
+.services__cards{
+    padding:4em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service__card{
+    width:33%;
+    min-width:250px;
+    padding-top:2em;
+    text-align: center;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    border-radius: 15px;
+    margin-bottom:2em;
+    justify-content: space-between;
+}
+
+.service__icon{
+    margin: 0 auto;
+    position: relative;
+    margin-bottom:20px;
+}
+
+.service__icon .circle{
+    height:120px;
+    width:120px;
+    position: relative;
+    border-radius: 50%;
+    top:0;
+    left:0;
+    z-index: 0;
+    transition:all 0.5s linear;    
+}
+
+.service__icon img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    max-width:78px;
+}
+
+.service1 .service__icon img{
+    max-width:40px;
+}
+
+.service2 .service__icon img{
+    max-width:40px;
+}
+
+.service5 .service__icon img{
+    margin-top:5px;    
+}
+
+.service__body{
+    z-index:2;
+    position: relative;
+    padding:2em;
+}
+
+.service__title{
+    font-weight: var(--medium);
+    font-size:23px;
+    margin-bottom:10px;
+}
+
+.service__content{
+    font-size:19px;
+    color:var(--lightBlack);
+}
+
+
+.service__card:hover > .service__icon .circle{
+    transform:scale(8);
+}
+
+.service__card:hover > .service__body{
+    background: rgba(255, 255, 255, 0.6);
+    color:white;
+}
+
+.service__card:hover > .service__body .service__content{
+    color:white;
+}
+
+.service1 .service__icon .circle{
+    background-image: var(--greenLinearGradiant);
+}
+.service2 .service__icon .circle{
+    background-image: var(--purpleLinearGradiant);
+}
+.service3 .service__icon .circle{
+    background-image: var(--blueLinearGradiant);
+}
+.service4 .service__icon .circle{
+    background-image: var(--orangeLinearGradiant);
+}
+.service5 .service__icon .circle{
+    background-image: var(--redLinearGradiant);
+}
+.service6 .service__icon .circle{
+    background-image: var(--pinkOrangeLinearGradiant);
+}
+.service7 .service__icon .circle{
+    background-image: var(--lightGreenLinearGradiant);
+}
+.service8 .service__icon .circle{
+    background-image: var(--pinkLinearGradiant);
+}
+.service9 .service__icon .circle{
+    background-image: var(--blueGreenLinearGradiant);
+}
+
+/* responseive view starts */
+
+@media screen and (max-width:900px){
+    .main__heading{
+        font-size: 40px;
+    }
+    .secondary__heading{
+        font-size:20px;
+    }
+    .services__container{
+        padding:4em 2em;
+    }
+    .services__heading{
+        margin:0;
+    }
+    .services__cards{
+        padding:2em 0;
+        padding-bottom: 0;
+    }
+    .service__body{
+        padding:1em;
+    }
+    .service__card{
+        width:48%;
+    }
+}
+
+@media screen and (max-width:816px){
+    .service__card{
+        min-width: 220px;;
+    }
+}
+
+@media screen and (max-width:768px){
+    .service__title{
+        font-size: 20px;
+    }
+    .service__content{
+        font-size: 18px;
+    }
+    .service__icon .circle{
+        height:100px;
+        width:100px;
+    }
+    .service1 .service__icon img,
+    .service2 .service__icon img{
+        max-width:35px;
+    }
+    .service__icon img{
+        max-width:72px;
+    }
+    .service__card{
+        min-width:200px;
+    }
+    .services__container{
+        padding:3em 1em;
+    }
+    .services__cards{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width:650px){
+    .service__card{
+        width:49%;
+    }
+}
+
+@media screen and (max-width:480px){
+    .service__card{
+        width:100%;
+        max-width:400px;
+    }
+    .main__heading{
+        font-size:35px;
+    }
+    .secondary__heading{
+        font-size:18px;
+    }
+    .service__title{
+        font-size:18px;
+    }
+    .service__content{
+        font-size:16px;
+    }
+    .service__icon .circle{
+        height:80px;
+        width:80px;
+    }
+    .service__icon img{
+        max-width:60px;
+    }
+    .service1 .service__icon img, .service2 .service__icon img{
+        max-width:27px;
+    }
+    .service__body{
+        padding:0.2em;
+    }
+    .services__container{
+        padding:3em 1em;
+    }
+}
+
+@media screen and (max-width:440px){
+    .services__heading{
+        margin-left:10px;
+    }
+    .service__card{
+        min-width:unset !important;
+    }
+}
+
+@media screen and (max-width:375px){
+    .main__heading{
+        font-size:30px;
+    }
+    .secondary__heading{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .main__heading{
+        font-size:25px;
+    }
+    .secondary__heading{
+        font-size: 16px;
+    }
+}
+/* responseive view ends */

@@ -1,0 +1,354 @@
+.project__container{
+    padding:60px 80px 100px 80px;
+    background:var(--bgGray);
+    font-family: 'Josefin Sans';
+}
+
+.project__container .main__heading{
+    margin-bottom: 60px;
+}
+
+.project__cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.project__card{
+    width:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:2px solid var(--blue);
+    transition: all 0.3s linear;
+}
+
+.project__card1{
+    z-index:4;
+    transform: rotate(-3deg);
+    padding:20px 50px;
+    background-color: var(--p1BgColor);
+}
+.project__card2{
+    z-index:2;
+    transform: rotate(6deg);
+    padding:20px 17px;
+    background-color: var(--p1BgColor);
+    background-image:var(--p2BgColor) ;
+}
+.project__card3{
+    z-index:3;
+    transform: rotate(7deg);
+    padding:30px 15px;
+    margin-left: 200px;
+    background-color: var(--p3BgColor);
+}
+.project__card4{
+    z-index:1;
+    transform: rotate(-3deg);
+    margin-top: -55px;
+    padding:15px;
+    background-color: var(--p4BgColor);
+}
+
+.project__card:hover{
+    transform: scale(1.1);
+    z-index:5;
+}
+
+.animate__project__section .project__card:nth-child(1),
+.animate__project__section .project__card:nth-child(3){
+    animation:animateLeftProjectCards 1s 1 ease-in;
+}
+
+.animate__project__section .project__card:nth-child(2),
+.animate__project__section .project__card:nth-child(4){
+    animation:animateRightProjectCards 1s 1 ease-in;
+}
+
+@keyframes animateLeftProjectCards {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes animateRightProjectCards {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.project__card1{
+    width:52%;
+}
+
+.project__card4{
+    width:45%;
+}
+
+.project__card2{
+    width:37%;
+}
+
+.project__card3{
+    width:33%;
+}
+
+.project__card img{
+    object-fit: contain;
+    height:auto;
+}
+
+.project__card1 img{
+    max-width:440px;
+    margin-bottom: 20px;
+}
+.project__card4 img{
+    margin-bottom: 20px;
+    max-width:315px;
+}
+.project__card2 img{
+    max-width:153px;
+}
+.project__card3 img{
+    max-width:177px;
+}
+
+.project__card:nth-child(1),
+.project__card:nth-child(4){
+    flex-direction: column;
+}
+
+.project__card:nth-child(2),
+.project__card:nth-child(3){
+    flex-direction: row-reverse;
+}
+
+
+/* 
+.project__card::after{
+    content:'';
+    position: absolute;
+    background-image:linear-gradient(to bottom , rgba(0,0,0,0.1),rgba(0,0,0,0.2));
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index:0;
+} */
+
+.project__title{
+    font-size:32px;
+    letter-spacing: 0.38px;
+    line-height: 53px;
+}
+
+.project__card1 .project__title{
+    color:var(--p1Color);
+}
+
+.project__card2 .project__title{
+    color:var(--p2Color);
+}
+
+.project__card3 .project__title{
+    color:var(--p3Color);
+}
+
+.project__card4 .project__title{
+    color:var(--p4Color);
+}
+
+@media only screen and (max-width:1250px){
+    .project__card1 img{
+        max-width:360px;
+    }
+    .project__card4 img{
+        max-width:275px;
+    }
+    .project__card2 img{
+        max-width:113px;
+    }
+    .project__card3 img{
+        max-width:137px;
+    }
+    .project__title{
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .project__card3{
+        margin-left: 150px;
+    }
+    .project__card4{
+        margin-top: -45px;
+    }
+}
+
+@media screen and (max-width:992px){
+    .project__card1{
+        transform: rotate(0deg);
+        padding:20px;
+        border-bottom: none;
+        border-right: none;
+    }
+    .project__card2{
+        transform: rotate(0deg);
+        padding:20px 17px;
+        border-bottom: none;
+    }
+    .project__card3{
+        transform: rotate(0deg);
+        padding:20px 15px;
+        margin-left:0px;
+        border-right: none;
+    }
+    .project__card4{
+        transform: rotate(0deg);
+        margin-top: 0px;
+    }
+    .project__cards{
+        align-items: stretch;
+    }
+    .project__card1,.project__card4{
+        width:60%;
+    }
+    .project__card2,.project__card3{
+        width:40%;
+    }
+}
+
+@media screen and (max-width:850px){
+    .project__container{
+        padding: 60px 30px;
+    }
+    .project__card1 img{
+        max-width:250px;
+        margin-bottom: 10px;
+    }
+    .project__card4 img{
+        max-width:175px;
+        margin-bottom: 10px;
+    }
+    .project__card2 img{
+        max-width:83px;
+    }
+    .project__card3 img{
+        max-width:97px;
+    }
+    .project__title{
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .project__cards{
+        flex-direction: column;
+    }
+    .project__card{
+        width:70%;
+    }
+    .project__card1,.project__card3{
+        transform: rotate(-6deg);
+    }
+    .project__card2,.project__card4{
+        margin-left: auto;
+        transform: rotate(6deg);
+    }
+    .project__card2{
+        z-index:6;
+        margin-top:-5px
+    }
+    .project__card3{
+        z-index:7;
+    }
+    .project__card4{
+        z-index:8;
+        margin-top:-10px
+    }
+    .project__card:not(:last-child){
+        border: 2px solid var(--blue);
+    }
+    .project__card:last-child{
+        border-top: 2px solid var(--blue);
+    }
+    .project__card2 img{
+        max-width:103px;
+    }
+    .project__card3 img{
+        max-width:137px;
+    }
+    .project__card4 img{
+        max-width:200px;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .project__container{
+        padding: 60px 15px;
+    }
+    .project__title{
+        font-size: 16px;
+        line-height: 23px;
+    }
+    .project__card{
+        padding: 10px;
+    }
+    .project__card2 img{
+        max-width:83px;
+        margin-left: 20px;
+    }
+    .project__card3 img{
+        max-width:97px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .project__card{
+        width:90%;
+    }
+    .project__card1,.project__card3{
+        transform: rotate(-4deg);
+    }
+    .project__card2,.project__card4{
+        transform: rotate(4deg);
+    }
+    .project__card2{
+        margin-top:-2px
+    }
+    .project__card4{
+        margin-top:-2px
+    }
+}
+
+@media only screen and (max-width:350px){
+    .project__card{
+        width:100%;
+        margin-bottom: 10px;
+    }
+    .project__card1,.project__card3{
+        transform: rotate(-2deg);
+    }
+    .project__card2,.project__card4{
+        transform: rotate(2deg);
+    }
+    .project__card2{
+        margin-top:-2px
+    }
+    .project__card4{
+        margin-top:-2px
+    }
+}

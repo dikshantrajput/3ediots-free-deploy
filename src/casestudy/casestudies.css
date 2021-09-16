@@ -1,0 +1,108 @@
+.casestudy__banner__container{
+    padding:4em 4em 6em 4em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.casestudy__main__container .casestudy__main__image__container{
+    max-width: 500px;
+}
+
+.casestudy__main__container .casestudy__content__container{
+    flex:0.45;
+    margin-right: 100px;
+}
+
+.casestudy__main__image__container{
+    flex:0.5;
+}
+
+.casestudy__main__container .casestudy__content__container a span{
+    margin-right: 0;
+}
+
+.casestudy__cards__container{
+    background: var(--bgGray);
+    padding: 8em 6em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:1100px) {
+    .casestudy__banner__container{
+        padding:4em 2em;
+    }
+    .casestudy__main__image__container{
+        flex:0.45;
+    }
+    .casestudy__cards__container{
+        padding:6em 4em;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .casestudy__banner__container{
+        padding:4em 2em;
+        justify-content: space-between;
+    }
+    .casestudy__main__container .casestudy__content__container{
+        margin-right: 50px;
+    }
+    .casestudy__main__image__container{
+        flex:0.55;
+    }
+    .casestudy__cards__container{
+        padding:4em 2em;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .casestudy__banner__container{
+        padding:2em;
+        flex-direction: column;
+    }
+    .casestudy__main__container .casestudy__content__container{
+        margin-right: 0px;
+    }
+    .casestudy__main__image__container{
+        margin-bottom: 50px;
+    }
+    .casestudy__main__container .casestudy__main__image__container{
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .casestudy__banner__container{
+        padding:1em;
+        padding-bottom: 3em;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .casestudy__cards__container{
+        padding: 3em 1em;
+    }
+    .casestudy__main__container .casestudy__main__image__container{
+        max-width:350px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .casestudy__cards__container{
+        padding: 3em 1em;
+    }
+    .casestudy__main__container .casestudy__main__image__container{
+        max-width:300px;
+    }
+}
+
+@media screen and (min-width:1500px){
+    .casestudy__main__container .casestudy__content__container{
+        max-width:600px;
+    }
+}
+

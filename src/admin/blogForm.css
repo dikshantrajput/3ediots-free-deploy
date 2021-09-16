@@ -1,0 +1,49 @@
+.blog__form__container{
+    padding:0 4em;
+    display: grid;
+    place-items: center;
+    background: #efefef;
+}
+
+.blog__form__container form{
+    width:100%;
+    max-width:500px;
+    margin-bottom: 40px;
+}
+
+.form__input__file{
+    display: block;
+    width:100%;
+    margin-top: 5px;
+}
+
+.form__textarea{
+    height:200px;
+    display: block;
+    width:100%;
+    border:1px solid #ccc;
+    border-radius: 9px;
+    padding:10px;
+    outline: none;
+    color:black;
+    font-size:14px;
+    resize:none;
+}
+
+.percentage__bar__container{
+    height:4px;
+    width:100%;
+    background:white;
+    border-radius:5px;
+}
+
+.percentage__bar{
+    width:0px;
+    height:100%;
+    background:var(--blue);
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,0.1);
+}
+
+.success{
+    color:rgb(11, 185, 11);
+}

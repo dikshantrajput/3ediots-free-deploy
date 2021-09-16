@@ -1,0 +1,88 @@
+.casestudy__container{
+    min-height:100vh;
+    display: flex;
+    padding:4em;
+    font-family: 'Josefin Sans';
+    background: var(--bgGray);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.casestudy__heading .main__heading{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.casestudy__heading .secondary__heading p{
+    margin-bottom: 16px;
+}
+
+.casestudy__button a{
+    padding:12px;
+    display: inline-block;
+    width: unset;
+}
+
+.casestudy__button a span{
+    margin-right: 10px;
+}
+
+.casestudy__image__container{
+    max-width:580px;
+    flex:0.6;
+    margin-right: 80px;
+}
+
+.casestudy__image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.casestudy__content__container{
+    flex:0.4;
+}
+
+@media screen and (max-width:1100px) {
+    .casestudy__container{
+        padding:50px 2em;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .casestudy__container{
+        padding:50px 1em;
+    }
+    .casestudy__image__container{
+        margin-right: 40px;
+    }
+    .casestudy__content__container{
+        flex: 0.5;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .casestudy__container{
+        flex-direction: column;
+        padding:50px 2em;
+    }
+    .casestudy__image__container{
+        margin-bottom: 50px;
+        margin-right: 0;
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .casestudy__container{
+        padding:50px 1em;
+    }
+    .casestudy__button a{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .casestudy__image__container{
+        margin-bottom: 30px;
+        max-width: 100%;
+    }
+}

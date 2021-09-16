@@ -1,0 +1,137 @@
+.testimonials__container{
+    padding:4em;
+    font-family: 'Josefin Sans';
+}
+
+.testimonials__container .main__heading{
+    margin-bottom: 21px;
+}
+
+.testimonials__container .secondary__heading{
+    text-align: center;
+}
+
+.testimonials__heading{
+    margin-bottom: 50px;
+    margin-left:30px;
+}
+
+.testimonial__group{
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial__card{
+    background:white;
+    box-shadow: 0px 3px 59px 0px #e8e8e8e8;
+    border-radius:15px;
+    padding:2em;
+    padding-bottom:1.5em;
+    margin:2em;
+    text-align: left;
+    max-width:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial__content p{
+    color:var(--lightBlack);
+    line-height:29px;
+    padding:0.2em 1.5em;
+    font-size: 20px;
+}
+
+.right__quote{
+    text-align: right;
+}
+
+.testimonial__footer{
+    font-size: 20px;
+    margin-top:20px;
+    text-align: right;
+}
+
+.testimonial__role{
+    font-size:14px;
+    color:var(--black);
+}
+
+.carousel .slide{
+    background-color: unset;
+}
+
+.testimonials__container .carousel .slider-wrapper{
+    box-shadow: unset;
+}
+
+.testimonials__container .carousel .slider-wrapper.axis-horizontal .slider .slide{
+    background: var(--white);
+}
+/* responsive view starts */
+
+@media screen and (max-width:900px){
+    .testimonials__container{
+        padding:50px 2em;
+    }
+    .testimonial__card{
+        margin:1em;
+        padding:1em;
+    }
+    .testimonial__content p{
+        padding:0.2em 1em;
+    }   
+    .testimonial__role{
+        font-size:12px;
+    } 
+    .testimonials__container .carousel .control-dots{
+        bottom:-10px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .testimonials__container .secondary__heading{
+        text-align: left;
+    }
+    .testimonials__container .main__heading{
+        margin-bottom: 15px;
+    }
+    .testimonials__heading{
+        margin:0;
+        margin-bottom: 30px;
+    }
+    .testimonial__content p{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .testimonial__footer{
+        font-size: 16px;;
+    }
+    .testimonial__role{
+        font-size:10px;
+    } 
+    .testimonial__card{
+        margin: 1em;
+    }
+    .carousel.carousel-slider{
+        padding:0;
+    }
+}
+
+@media screen and (max-width:375px){
+    .testimonials__container{
+        padding:50px 0.5em;
+    }
+    .testimonials__heading{
+        margin-left:10px;
+    }
+    .testimonial__content p{
+        font-size: 15px;
+    }
+    .testimonial__footer{
+        font-size: 15px;
+    }
+}
+
+
+/* responsive view ends */
