@@ -63,12 +63,12 @@
 
 @media screen and (max-width:768px) {
     .casestudy__container{
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding:50px 2em;
         min-height: unset;
     }
     .casestudy__image__container{
-        margin-bottom: 50px;
+        margin-top: 50px;
         margin-right: 0;
         max-width: 500px;
     }
@@ -86,7 +86,7 @@
         margin-bottom: 10px;
     }
     .casestudy__image__container{
-        margin-bottom: 20px;
+        margin-top: 30px;
         max-width: 100%;
     }
 }
